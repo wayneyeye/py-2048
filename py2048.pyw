@@ -91,6 +91,8 @@ class GridView:
     def updateDisplay(self):
         if self.lose:
             self.loseView.config(text="You Lose!")
+        else:
+            self.loseView.config(text="")
         self.scoreView.config(text="Score: %s" %self.score)
         for r in range(4):
             for c in range(4):
